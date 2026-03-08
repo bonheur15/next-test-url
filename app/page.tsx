@@ -11,7 +11,7 @@ export default function Home() {
 
   return (
     <main className="mx-auto flex min-h-screen w-full max-w-5xl flex-col gap-6 px-4 py-10 sm:px-6">
-      <h1 className="text-2xl font-semibold">URL Raw Text Fetcher</h1>
+      <h1 className="text-2xl font-semibold">URL Raw Text Fetcher.</h1>
 
       <form action={formAction} className="flex flex-col gap-3">
         <label htmlFor="url" className="text-sm font-medium">
