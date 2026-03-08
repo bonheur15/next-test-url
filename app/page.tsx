@@ -1,7 +1,8 @@
 "use client";
 
 import { useActionState } from "react";
-import { fetchUrlAction, initialFetchUrlState } from "./actions/fetch-url";
+import { fetchUrlAction } from "./actions/fetch-url";
+import { initialFetchUrlState } from "./actions/utils";
 
 export default function Home() {
   const [state, formAction, isPending] = useActionState(

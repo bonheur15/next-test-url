@@ -1,20 +1,7 @@
 "use server";
 
-export type FetchUrlState = {
-  url: string;
-  status: number | null;
-  contentType: string | null;
-  rawText: string;
-  error: string | null;
-};
-
-const INITIAL_STATE: FetchUrlState = {
-  url: "",
-  status: null,
-  contentType: null,
-  rawText: "",
-  error: null,
-};
+import { FetchUrlState } from "./types";
+import { INITIAL_STATE } from "./utils";
 
 export async function fetchUrlAction(
   _prevState: FetchUrlState,
@@ -92,5 +79,3 @@ export async function fetchUrlAction(
     };
   }
 }
-
-export const initialFetchUrlState = INITIAL_STATE;
